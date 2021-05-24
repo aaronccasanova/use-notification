@@ -5,7 +5,7 @@
 import React from 'react'
 
 /**
- * State of the `useAsync` hook (Managed by the NotificationReducer).
+ * State of the `useNotification` hook (Managed by the NotificationReducer).
  */
 interface State {
   permission: null | NotificationPermission

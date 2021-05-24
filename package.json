@@ -1,6 +1,6 @@
 {
   "name": "use-notification",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "React hook wrapping the Web Notification API.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

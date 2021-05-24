@@ -15,7 +15,7 @@ import { useNotification } from 'use-notification'
 ## useNotification ReturnType
 
 ```tsx
-interface UseNotificationReturn {
+interface UseNotificationReturnType {
   /**
    * Represents the permission status for displaying web notifications on
    * the current origin.
@@ -49,6 +49,8 @@ Note: The API is intentionally minimal and unopinionated to ensure the hook is f
 
 ### Example: Simple Notification
 
+[Demo](https://1pb5m.csb.app/) • [Code Sandbox](https://codesandbox.io/s/simple-notification-1pb5m)
+
 ```tsx
 import { useNotification } from 'use-notification'
 
@@ -76,6 +78,8 @@ function App() {
 ```
 
 ### Example: Stacked Notifications
+
+[Demo](https://e284g.csb.app/) • [Code Sandbox](https://codesandbox.io/s/stacked-notification-e284g)
 
 - Clicking `Notify` will continually add/stack notifications.
 - Clicking `Close Notifications` closes notifications starting from the top of the stack.
@@ -122,6 +126,8 @@ function App() {
 
 ### Example: Replace Notification
 
+[Demo](https://gx5wl.csb.app/) • [Code Sandbox](https://codesandbox.io/s/replace-notification-gx5wl)
+
 ```tsx
 import { useNotification } from 'use-notification'
 
@@ -158,7 +164,7 @@ function App() {
         <button onClick={requestPermission}>Enable Notifications</button>
       )}
       <button onClick={handleNotify}>Notify</button>
-      <button onClick={notification.current?.close}>Close Notification</button>
+      <button onClick={handleClose}>Close Notification</button>
     </div>
   )
 }
